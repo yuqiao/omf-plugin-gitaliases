@@ -33,7 +33,7 @@ abbr gw git whatchanged
 
 abbr gm git merge
 
-abbr gpf = git push --force-with-lease
+abbr gpf git push --force-with-lease
 
 # info
 abbr gfame git shortlog -s --
@@ -59,11 +59,11 @@ abbr gmenoff git merge --no-ff
 abbr gassume git update-index --assume-unchanged
 abbr gunassume git update-index --no-assume-unchanged
 
-  # log
-abbr gl  git log --oneline --decorate --graph --branches --remotes -20
+# log
+abbr gl git log --oneline --decorate --graph --branches --remotes -20
 abbr gll git log --oneline --decorate --stat --graph
 abbr gls git log --oneline --decorate --graph --branches --remotes --simplify-by-decoration
-abbr gt  git log --oneline --decorate --graph --branches --remotes -20 --pretty=format:'%C(yellow)%h%C(red bold)%d %Creset%s %C(green)(%ar) %C(cyan)<%cn>' --date=relative
+abbr gt "git log --oneline --decorate --graph --branches --remotes -20 --pretty=format:'%C(yellow)%h%C(red bold)%d %Creset%s %C(green)(%ar) %C(cyan)<%cn>' --date=relative"
 
 
 # tag
