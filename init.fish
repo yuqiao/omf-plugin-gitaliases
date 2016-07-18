@@ -10,7 +10,7 @@ abbr gcl git clone
 
 abbr gc git commit -v
 abbr gca git commit -v -a
-abbr gcm git commit -v -m
+abbr gcm git commit -v -m ""
 abbr gci git commit --interactive
 
 abbr gco git checkout
@@ -60,10 +60,24 @@ abbr gassume git update-index --assume-unchanged
 abbr gunassume git update-index --no-assume-unchanged
 
 # log
-abbr gl git log --oneline --decorate --graph --branches --remotes -20
-abbr gll git log --oneline --decorate --stat --graph
-abbr gls git log --oneline --decorate --graph --branches --remotes --simplify-by-decoration
-abbr gt "git log --oneline --decorate --graph --branches --remotes -20 --pretty=format:'%C(yellow)%h%C(red bold)%d %Creset%s %C(green)(%ar) %C(cyan)<%cn>' --date=relative"
+# These are functions because the is no sense in expanding
+# such long unreadeable commands
+function gl
+  git log --oneline --decorate --graph --branches --remotes -20
+end
+
+function gll
+  git log --oneline --decorate --stat --graph
+end
+
+function gls
+  git log --oneline --decorate --graph --branches --remotes --simplify-by-decoration
+end
+
+function gt
+  "git log --oneline --decorate --graph --branches --remotes -20 --pretty=format:'%C(yellow)%h%C(red bold)%d %Creset%s %C(green)(%ar) %C(cyan)<%cn>' --date=relative"
+end
+
 
 
 # tag
