@@ -59,6 +59,10 @@ abbr gmenoff git merge --no-ff
 abbr gassume git update-index --assume-unchanged
 abbr gunassume git update-index --no-assume-unchanged
 
+function grmignored
+  git rm --cached (git ls-files -i --exclude-from=.gitignore)
+end
+
 # log
 # These are functions because the is no sense in expanding
 # such long unreadeable commands
@@ -77,6 +81,7 @@ end
 function gt
   "git log --oneline --decorate --graph --branches --remotes -20 --pretty=format:'%C(yellow)%h%C(red bold)%d %Creset%s %C(green)(%ar) %C(cyan)<%cn>' --date=relative"
 end
+
 
 
 
