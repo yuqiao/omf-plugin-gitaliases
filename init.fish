@@ -59,7 +59,7 @@ abbr gmenoff git merge --no-ff
 abbr gassume git update-index --assume-unchanged
 abbr gunassume git update-index --no-assume-unchanged
 
-function grmignored
+function grmignored -d "Remove gitinored files from working tree"
   git rm --cached (git ls-files -i --exclude-from=.gitignore)
 end
 
