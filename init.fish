@@ -20,8 +20,9 @@ abbr ga git add
 abbr gap git add -p
 abbr gall git add .
 
-abbr gdi = diff
-abbr gdic = diff --cached
+abbr gd git diff 
+abbr gdi git diff
+abbr gdic git diff --cached
 
 abbr gus git reset HEAD
 
