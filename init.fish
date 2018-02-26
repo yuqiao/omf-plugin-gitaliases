@@ -34,6 +34,8 @@ abbr gw git whatchanged
 
 abbr gm git merge
 
+abbr gp git push
+abbr gpl git pull
 abbr gpf git push --force-with-lease
 
 # info
