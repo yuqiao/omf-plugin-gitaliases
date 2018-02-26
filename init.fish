@@ -8,6 +8,7 @@
 # shortcuts
 abbr gcl git clone
 
+abbr grv git remote -v
 abbr gc git commit -v
 abbr gca git commit -v -a
 abbr gcm git commit -v -m ""
