@@ -52,6 +52,7 @@ abbr gclean git clean -f
 
 # branches
 abbr gbr git checkout
+abbr gb git branch
 abbr gbra git branch -av
 abbr gnewbr git checkout -b
 abbr grmbr git branch -d

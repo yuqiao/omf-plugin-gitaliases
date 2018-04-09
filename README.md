@@ -13,7 +13,7 @@
 ## Install
 
 ```fish
-$ omf install https://github.com/pioneerskies/omf-plugin-gitaliases
+$ omf install https://github.com/yuqiao/omf-plugin-gitaliases
 ```
 
 
